@@ -6,8 +6,8 @@ export function sort<T>(array: T[], comparetor?: (l: T, r: T) => number): T[]
 
   const result = Array.from(array);
 
-  for (let i = 1; i < result.length - 1; ++i) {
-    for (let j = 2; j < result.length - 1; ++i) {
+  for (let i = 1; i < result.length; ++i) {
+    for (let j = 1; j <= result.length - i; ++i) {
         const c = f(result[i], result[j]);
         if (c < 0) {
             [result[i], result[j]] = [result[j], result[i]];

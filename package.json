@@ -10,8 +10,7 @@
     "build:i": "parcel build index.ts -d dist/",
     "build:a": "parcel build src/algorithm/* -d dist/algorithm",
     "build:p": "parcel build src/poisoning/* -d dist/poisoning",
-    "build": "yarn build:i && yarn build:a && yarn build:p",
-    "test": "jest test/"
+    "build": "yarn build:i && yarn build:a && yarn build:p"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
